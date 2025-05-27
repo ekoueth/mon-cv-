@@ -176,34 +176,56 @@ max-width: 768px) {
     padding: 2rem 1rem;
   }
 
-  .contact-info {
+.contact-info {
   max-width: 600px;
   margin: 5rem auto;
-  padding: 2rem;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem 1rem;
+  background-color: #f9f9fb; 
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(108, 99, 255, 0.1); 
   text-align: center;
 }
 
 .contact-info h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #444;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #3a3a3a;
+  font-weight: 600;
 }
 
-.contact-info p {
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-card {
+  background-color: #fff; /* blanc pur pour chaque carte */
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(108, 99, 255, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 6px 15px rgba(108, 99, 255, 0.2);
+}
+
+.contact-card p {
   font-size: 1.2rem;
-  margin: 0.8rem 0;
+  color: #555;
+  margin: 0;
 }
 
-.contact-info a {
+.contact-card a {
   color: #6C63FF;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.contact-info a:hover {
+.contact-card a:hover {
+  color: #574fd6;
   text-decoration: underline;
 }
    .btn-click {
